@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/black"
-    tools:context=".AudioplayScreen">
+    android:orientation="vertical"
+    tools:context=".audioscreen1">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,12 +26,13 @@
             android:textStyle="bold"
             app:backgroundTint="@color/purple_700" />
 
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            android:src="@drawable/mike"
-            android:layout_marginTop="25dp"
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/mik"
             android:layout_gravity="center"/>
+
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,8 +40,8 @@
             android:textStyle="bold"
             android:textColor="@color/halfwhite"
             android:textSize="13sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginLeft="174dp"
+            android:layout_marginTop="30dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -79,5 +80,6 @@
 
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

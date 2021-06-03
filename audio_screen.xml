@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/edit"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/edit"/>
+
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/share"
+            android:id="@+id/share"
+            />
+    </RelativeLayout>
+
+
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="50dp"
+    app:strokeWidth="3dp"
+    app:strokeColor="#062BFD"
+    app:cardElevation="20dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/person_icon"
+        android:background="#0FFFFFFF"
+        android:scaleType="centerCrop"
+        android:id="@+id/profile_photo"
+        />
+
+
+</com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        android:text="Project Meeting"
+        android:id="@+id/project_metting"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:text="Meeting ID"
+            android:textColor="@color/teal_200"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/teal_200"
+            android:textSize="18sp"
+            android:text="Time"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="00:00"
+            android:textColor="@color/teal_200"
+            android:textSize="18sp"
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prupleline"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/backbutton"
+
+            />
+        <ImageView
+            android:layout_width="60dp"
+            android:paddingLeft="1dp"
+            android:layout_height="60dp"
+            android:src="@drawable/play"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/forwad"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="8dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="text 1"
+            android:textColor="@color/teal_200"
+            android:layout_weight="1"
+            android:padding="5dp"
+
+            android:background="@drawable/prupleline"
+            android:textSize="20dp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="text 2"
+            android:textColor="@color/teal_200"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:background="@drawable/prupleline"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="text 3"
+            android:textColor="@color/teal_200"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/prupleline"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="@color/teal_200"
+        android:background="@drawable/prupleline"/>
+
+
+
+
+
+</LinearLayout>
